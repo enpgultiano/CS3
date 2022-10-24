@@ -1,0 +1,22 @@
+* {
+   background-color: #FFC4D4;
+}
+.title {
+    font-size: 100px;
+	color:purple;
+    padding-top: 150px;
+    vertical-align: center;
+    text-align: center;
+    align-items: center;
+    line-height: 0px;
+	
+}
+.sub {
+    line-height: 0px;
+    font-size: 25px;
+	color:purple;
+	padding-top: 25px;
+    vertical-align: center;
+    text-align: center;
+    align-items: center;
+}
