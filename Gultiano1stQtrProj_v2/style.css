@@ -1,0 +1,95 @@
+* {
+	background-color: #FFC4D4;
+}
+
+.title {
+    font-size: 100px;
+	color:purple;
+    vertical-align: center;
+    text-align: center;
+    line-height: 0px;
+}
+
+#topper {
+    background-color:purple;
+	color:white;
+	position:absoulute;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	background-color:purple;
+	border-bottom: 2px solid white;
+	padding: 15px;
+	filter: drop-shadow(0px 0px 10px black);
+}
+
+#topnav {
+  overflow: hidden;
+  display:block;
+  background-color: #9F73AB;
+  top:0px;
+  left:0px;
+  right:0px;
+  position:relative;
+  filter: drop-shadow(0px 0px 10px black);
+}
+
+#topnav a {
+  background-color: #9F73AB;
+  display: block;
+  float:left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:18px;
+}
+
+#topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#sub {
+    background-color:purple;
+	border-top: 2px solid white;
+    font-size: 15px;
+	color:white;
+	bottom:0px;
+	left: 0px;
+	right: 0px;
+	position:fixed;
+	background-color:purple;
+	padding: 30px;
+	filter: drop-shadow(0px 0px 10px black);
+}
+
+.dropdown {
+  font-size:20px;
+  position:relative;
+  display:inline-block;
+  color:purple;
+  left:50%;
+  right:50%;
+}
+
+.dropdown:hover { 
+	transform: scale(1.2);
+    cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFC4D4;
+  font-size:15px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  border-radius: 10%;
+  padding: 10px 14px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
