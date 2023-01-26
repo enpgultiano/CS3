@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    font-family:Century Gothic;
+  }
+  
+  body {
+    background-color: #FFC4D4;
+    margin: 0;
+    overflow:auto;
+  }
+  
+  .header {
+    background-color: purple;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    text-align: center;
+    color:white;
+    top:0;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #9F73AB;
+    border-bottom:2px solid white;
+    filter: drop-shadow(0px 0px 10px black);
+    position: relative;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .keyfacts {
+    float:left;
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 45%;
+    height: 250px;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .keyfactshead {
+    background: purple;
+    color:white;
+    padding: 5px;
+    text-align:center;
+  }
+
+  .keyfacts:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+  }
+
+  .Overview{
+    float:right;
+    margin-top: 30px;
+    margin-right: 15px;
+    width: 45%;
+    height: 250px;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .overviewhead {
+    background: purple;
+    color:white;
+    padding: 5px;
+    text-align:center;
+  }
+
+  .ovtext {
+    padding: 10px;
+  }
+
+  .Overview:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+  }
+
+  .scope{
+    float:left;
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 45%;
+    height: 250px;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+  }
+
+  .scopehead {
+    background: purple;
+    color:white;
+    padding: 5px;
+    text-align:center;
+  }
+
+  .scopetext {
+    padding: 10px;
+  }
+
+  .scope:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+  }
+
+  .cons{
+    float:right;
+    margin-top: 30px;
+    margin-right: 15px;
+    width: 45%;
+    height: 250px;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+  }
+
+  .conshead {
+    background: purple;
+    color:white;
+    padding: 5px;
+    text-align:center;
+  }
+
+  .constext {
+    padding: 10px;
+  }
+
+  .cons:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+  }
+
+  .socmed-icons {
+    display: flex;
+    width: 50%;
+  height: 50px;
+  margin: auto;
+  justify-content: center;
+    align-items: center;
+}
+
+.socmed-icons a {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    transition: 0.5s;
+}
+
+.socmed-icons a:hover {
+    transform: scale(1.2);
+}
+
+#FB{
+background: url('../../images/sprite.png') no-repeat 72.059% 29.412%;
+  background-size: 100px 100px;
+  width: 32px;
+  height: 32px;
+}
+
+#IG{
+background: url('../../images/sprite.png') no-repeat 7.353% 7.353%;
+  background-size: 100px 100px;
+  width: 32px;
+  height: 32px;
+}
+
+#TWT{
+background: url('../../images/sprite.png') no-repeat 77.778% 86.667%;
+  background-size: 100px 100px;
+  width: 33px;
+  height: 33px;
+}
+
+footer{
+  text-align: center;
+  margin: 0 0 1.25vw 0;
+  font-size: 14px;
+}
