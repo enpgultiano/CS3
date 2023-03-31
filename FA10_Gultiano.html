@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const randomNumber = Math.floor(Math.random() * 1000) + 1;
+
+      const hundreds = Math.floor(randomNumber / 100);
+      const tens = Math.floor((randomNumber / 10) % 10);
+      const ones = randomNumber % 10;
+
+      document.write("Randomly Generated Number: " + randomNumber + "<br>");
+      document.write("Breakdown: " + hundreds*100 + ", " + tens*10 + ", " + ones);
+    </script>
+  </body>
+</html>
+
