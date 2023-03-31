@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<script>
+	var one = prompt("Enter a value for side a:");
+	var two = prompt("Enter a value for side b:");
+	var three = prompt("Enter a value for side c:");
+	
+	determineTriangle(one,two,three);
+
+	function determineTriangle(a,b,c){
+
+	if(a <= 0 || b <= 0 || c <= 0){
+		alert("Please try again. The values must be positive numbers.");
+	} 
+
+	if(a == b && b == c){
+		alert("The triangle is EQUILATERAL");
+	}
+	
+	else if(a == b || b == c || c == a){
+		alert("The triangle is ISOSCELES");
+	}
+	
+	else{
+		alert("The triangle is SCALENE");
+	}
+	
+	}
+</script>
+
+
+
+</body>
+</html>
