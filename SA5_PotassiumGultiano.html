@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cosmetics Core</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		span {color: blue; text-decoration: underline}
+		button {width: 100px; padding: 5px; background: pink;}
+	</style>
+</head>
+<body>
+	<h1>Welcome to Cosmetics Core</h1>
+	<h2>Please select from the following items</h2>
+	<!--- provide your own 3 items and their prices in the list --->
+	<ol>
+		<li>Eyeshadown Palette price: 350.00</li>
+		<li>Sunscreen: 300.00</li>
+		<li>Mascara price: 250.00</li>
+	</ol>
+	<!-- the following will be used to display purchase information -->
+	<p>Item selected: <span id="item"></span></p>
+	<p>Qty bought: <span id="qty"></span></p>
+	<p>Amount to pay for the item: <span id="bill"></span></p>
+	<p>Current Total Bill: <span id="tbill">0.00</span></p>
+	<button onclick="buyItem()">Buy an Item</button>
+	<button onclick="clearPurchases()">Clear</button>
+
+	<script>
+		/* function to buy an item */
+		function buyItem() {
+			// ask for item number and quantity using prompt()
+			var itemNum = prompt("Enter the item number:");
+			var qty = prompt("Enter the quantity:");
+
+			// validate the quantity entered, it should be an integer number
+			if (isNaN(qty) || parseInt(qty) <= 0) {
+				alert("Invalid quantity entered!");
+				return;
+			}
+
+			// compute the amount to pay and update the total bill
+			var unitPrice;
+			switch (itemNum) {
+				case "1":
+					unitPrice = 350.00;
+					break;
+				case "2":
+					unitPrice = 300.00;
+					break;
+				case "3":
+					unitPrice = 250.00;
+					break;
+				default:
+					alert("Invalid item number entered!");
+					return;
+			}
+			var amountToPay = unitPrice * parseInt(qty);
+			var currentTotalBill = parseFloat(document.getElementById("tbill").textContent.replace("Php ",""));
+			var newTotalBill = currentTotalBill + amountToPay;
+
+			// update the purchase information on the page
+			document.getElementById("item").textContent = "Item #" + itemNum;
+			document.getElementById("qty").textContent = qty;
+			document.getElementById("bill").textContent = "Php " + amountToPay.toFixed(2);
+			document.getElementById("tbill").textContent = "Php " + newTotalBill.toFixed(2);
+		}
+
+		/* function to clear purchases */
+		function clearPurchases() {
+			// reset all purchase information to their default values
+			document.getElementById("item").textContent = "";
+			document.getElementById("qty").textContent = "";
+			document.getElementById("bill").textContent = "";
+			document.getElementById("tbill").textContent = "0.00";
+		}
+	</script>
+</body>
+</html>
