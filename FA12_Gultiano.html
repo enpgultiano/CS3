@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Gultiano FA12 </title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Generate a multiplication table">
+        <meta name="keywords" content="HTML, JavaScript">
+        <meta name="author" content="Eunice Gultiano">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Multiplication Table </h2>
+
+    <p>[Enter two numbers between 2 and 10.]</p> </br>
+    
+    <input id="beginningValue"> by <input id="endingValue"> </br> </br>
+    
+    <button onclick="display()"> Click here when ready! </button> </br> </br> 
+    
+    <table id="table" border="2px"></table>
+    
+    <script>
+        function display() {
+            var beginningValue = document.getElementById("beginningValue").value;
+            var endingValue = document.getElementById("endingValue").value;
+            
+            if (beginningValue < 2 || beginningValue > 10) {
+                alert("Please enter numbers between 2 and 10");
+                return false;
+            }
+                        
+            if (endingValue < 2 || endingValue > 10) {
+                alert("Please enter numbers between 2 and 10");
+                return false;
+            }
+            
+            var table = "<table>";
+            
+            for (var i = 1; i <= beginningValue; i++) {
+                table +="<tr>";
+                for (var j = 1; j <= endingValue; j++) {
+                    table += "<td>" + i * j + "</td>";
+                }
+                table += "</tr>";
+            }
+            table += "</table>";
+            document.getElementById("table").innerHTML = table;
+        }
+    </script>
+</body>
+</html>
