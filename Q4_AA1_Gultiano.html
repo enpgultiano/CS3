@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Gultiano-AA </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <script>
+            let mRNA = prompt("Please enter the mRNA sequence. ");
+            let startCodon = mRNA.indexOf("AUG");
+    
+            if (startCodon !== -1) {
+                let codonArray = [];
+                let aminoArray = [];
+                let frame = mRNA.slice(startCodon);
+    
+                for (let i = 0; i < frame.length - 3; i += 3) {
+                    let codon = frame.slice(i, i + 3);
+                    codonArray.push(codon);
+                }
+        
+                for (let i = 0; i < codonArray.length; i++) {
+                    let amino = "";
+    
+                    switch (codonArray[i]) {
+                        case "UUU":
+                        case "UUC":
+                            amino = "Phe";
+                            break;
+                        case "UUA":
+                        case "UUG":
+                        case "CUU":
+                        case "CUC":
+                        case "CUA":
+                        case "CUG":
+                            amino = "Leu";
+                            break;
+                        case "AUU":
+                        case "AUC":
+                        case "AUA":
+                            amino = "Ile";
+                            break;
+                        case "AUG":
+                            amino = "Met";
+                            break;
+                        case "GUU":
+                        case "GUC":
+                        case "GUA":
+                        case "GUG":
+                            amino = "Val";
+                            break;
+                        case "UCU":
+                        case "UCC":
+                        case "UCA":
+                        case "UCG":
+                        case "AGU":
+                        case "AGC":
+                            amino = "Ser";
+                            break;
+                        case "CCU":
+                        case "CCC":
+                        case "CCA":
+                        case "CCG":
+                            amino = "Pro";
+                            break;
+                        case "ACU":
+                        case "ACC":
+                        case "ACA":
+                        case "ACG":
+                            amino = "Thr";
+                            break;
+                        case "GCU":
+                        case "GCC":
+                        case "GCA":
+                        case "GCG":
+                            amino = "Ala";
+                            break;
+                        case "UAU":
+                        case "UAC":
+                            amino = "Tyr";
+                            break;
+                        case "UGU":
+                        case "UGC":
+                            amino = "Cys";
+                            break;
+                        case "UGG":
+                            amino = "Trp";
+                            break;
+                        case "UAA":
+                        case "UAG":
+                        case "UGA":
+                            amino = "STOP";
+                            i = codonArray.length;
+                            break;
+                         case "CAU":
+                         case "CAC":
+                            amino = "His";
+                            break;
+                         case "CAA":
+                         case "CAG":
+                            amino = "Gln";
+                            break;
+                         case "AAU":
+                         case "AAC":
+                            amino = "Asn";
+                            break;
+                         case "AAA":
+                         case "AAG":
+                            amino = "Lys";
+                            break;
+                         case "GAU":
+                         case "GAC":
+                            amino = "Asp";
+                            break;
+                         case "GAA":
+                         case "GAG":
+                            amino = "Glu";
+                            break;
+                         case "CGU":
+                         case "CGC":
+                         case "CGA":
+                         case "CGG":
+                         case "AGA":
+                         case "AGG":
+                            amino = "Arg";
+                            break;
+                         case "GGU":
+                         case "GGC":
+                         case "GGA":
+                         case "GGG":
+                            amino = "Gly";
+                            break;
+        }
+
+        if (amino !== "") {
+            aminoArray.push(amino);
+        }
+    }
+
+    document.write('[' + codonArray.map(codon => `"${codon}"`).join(', ') + ']<br>');
+                document.write('<br>' + aminoArray.map((acid, index) => `${codonArray[index]} --> ${acid}`).join('<br>') + '</p>');
+            } else {
+                document.write("Start codon not found.");
+            }
+    </script>
+  </body>
+</html>
