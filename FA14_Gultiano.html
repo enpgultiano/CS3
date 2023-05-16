@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Gultiano - Q4 AA</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #FEF2F4;
+      }
+      form {
+        background-color: #FCC8D1;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 70%;
+        margin: auto;
+      }
+      fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+      legend {
+        text-align:center;
+        color: #432C7A;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      textarea {
+        
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        border: none;
+      }
+      input[type="submit"],
+      input[type="reset"] {
+        background-color: #643843;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: #99627A;
+      }
+      input[type="submit"]:focus,
+      input[type="reset"]:focus {
+        outline: none;
+      }
+      .red-border {
+        border: 3px solid red;
+      }
+      .green-border {
+        border: 3px solid green;
+      }
+      #output {
+        margin-top: 20px;
+        background-color: #D14D72;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: none;
+      }
+      #output p {
+        color:white;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="signup-form" onsubmit="return false;">
+      <fieldset>
+        <legend>Study with us !</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" onblur="checkInput(this)" onfocus="resetBorder(this)" required>
+        <label for="username">Username:</label>
+        <input type="text" id="username" onblur="checkInput(this)" onfocus="resetBorder(this)" required>
+        <label for="gender">Gender:</label>
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Prefer not to mention</option>
+        </select>
+        <label for="password">Password:</label>
+        <input type="password" id="password" onblur="checkInput(this)" onfocus="resetBorder(this)" required>
+        <label for="email">Email address:</label>
+        <input type="email" id="email" onblur="checkInput(this)" onfocus="resetBorder(this)" required>
+        <label for="address">Address:</label>
+        <textarea id="address" rows="3" onblur="checkInput(this)" onfocus="resetBorder(this)"></textarea>
+        <label for="interest">Tell us about your interests:</label>
+        <textarea id="interest" rows="3" onblur="checkInput(this)" onfocus="resetBorder(this)"></textarea>
+        <input type="submit" value="Submit" onclick="submitForm()">
+        <input type="reset" value="Reset" onclick="resetForm()">
+      </fieldset>
+    </form>
+    <div id="output">
+      <p><strong>Name:</strong> <span id="output-name"></span></p>
+      <p><strong>Username:</strong> <span id="output-username"></span></p>
+      <p><strong>Gender:</strong> <span id="output-gender"></span></p>
+      <p><strong>Password:</strong> <span id="output-password"></span></p>
+      <p><strong>Email address:</strong> <span id="output-email"></span></p>
+      <p><strong>Address:</strong> <span id="output-address"></span></p>
+      <p><strong>Interests:</strong> <span id="output-interest"></span></p>
+      
+    </div>
+    <script>
+      function checkInput(element) {
+        if (element.value === "") {
+          element.classList.add("red-border");
+        } else {
+          element.classList.remove("red-border");
+          element.classList.add("green-border");
+        }
+      }
+      
+      function resetBorder(element) {
+        element.classList.remove("red-border");
+        element.classList.remove("green-border");
+      }
+      
+      function submitForm() {
+        var name = document.getElementById("name").value;
+        var username = document.getElementById("username").value;
+        var gender = document.getElementById("gender").value;
+        var password = document.getElementById("password").value;
+        var email = document.getElementById("email").value;
+        var address = document.getElementById("address").value;
+        var interest = document.getElementById("interest").value;
+        document.getElementById("output-name").textContent = name;
+        document.getElementById("output-username").textContent = username;
+        document.getElementById("output-gender").textContent = gender;
+        document.getElementById("output-password").textContent = password;
+        document.getElementById("output-email").textContent = email;
+        document.getElementById("output-address").textContent = address;
+        document.getElementById("output-interest").textContent = interest;
+        document.getElementById("output").style.display = "block";
+      }
+      
+      function resetForm() {
+        document.getElementById("name").value = "";
+        document.getElementById("username").value = "";
+        document.getElementById("gender").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("address").value = "";
+        document.getElementById("interest").value = "";
+        document.getElementById("name").style.borderColor = "";
+        document.getElementById("username").style.borderColor = "";
+        document.getElementById("gender").style.borderColor = "";
+        document.getElementById("password").style.borderColor = "";
+        document.getElementById("email").style.borderColor = "";
+        document.getElementById("address").style.borderColor= "";
+        document.getElementById("interest").style.borderColor= "";
+        document.getElementById("output").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
+
