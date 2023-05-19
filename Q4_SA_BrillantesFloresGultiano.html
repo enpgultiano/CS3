@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Science Reviewer</title>
+	  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #E7CBCB;
+    }
+
+    h1 {
+      text-align: center;
+      color: #643843; 
+      margin-top:25px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border: 2px solid #ccc;
+      border-radius: 15px;
+    }
+
+    ol {
+      list-style-type: decimal;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .question {
+      font-weight: bold;
+      color: #006400; 
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-left: 10px;
+    }
+      
+    input[type="text"] {
+	   width: 100%;
+ 		 padding: 8px;
+	   border: 1px solid #ccc;
+	   border-radius: 8px;
+	   box-sizing: border-box;
+		}
+
+    #submit-btn,
+    #reset-btn {
+    margin-top: 20px;
+  	padding: 10px 20px;
+  	background-color: #482121;
+  	color: #fff;
+  	border: none;
+  	border-radius: 5px;
+  	cursor: pointer;
+  	font-weight: bold;
+  	text-transform: uppercase;
+    }
+
+    #feedback {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .correct {
+      color: green;
+    }
+
+    .incorrect {
+      color: red;
+    }
+      
+    #submit-btn:hover,
+		#reset-btn:hover {
+  	  background-color: #7A3E3E;
+		}
+
+		#submit-btn:active,
+		#reset-btn:active {
+  		background-color: #99627A;
+		}
+      
+  </style>
+  
+</head>
+<body>
+  <h1>Science Reviewer</h1>
+  
+  <form id="quiz-form">
+    <h2>Multiple Choice Questions</h2>
+    <ol>
+      <li>
+        <span class="question">Which of the following is an observation?</span><br>
+        <label><input type="radio" name="q1" value="a">A. The water will evaporate when placed outside</label><br>
+        <label><input type="radio" name="q1" value="b">B. The children are being loud</label><br>
+        <label><input type="radio" name="q1" value="c">C. Global warming is due to several factors, including pollution</label><br>
+		  	<label><input type="radio" name="q1" value="d">D. Birds migrate to move from areas of low or decreasing resources to areas of high or increasing resources.Global warming is due to several factors, including pollution</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">Which of the following is considered a biotic factor in an ecosystem?</span><br>
+        <label><input type="radio" name="q2" value="a">A. Temperature</label><br>
+        <label><input type="radio" name="q2" value="b">B. Pressure</label><br>
+        <label><input type="radio" name="q2" value="c">C. Soil</label><br>
+        <label><input type="radio" name="q2" value="d">D. Plant</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">The human body has how many significant systems?</span><br>
+        <label><input type="radio" name="q3" value="a">A. 5</label><br>
+        <label><input type="radio" name="q3" value="b">B. 6</label><br>
+        <label><input type="radio" name="q3" value="c">C. 11</label><br>
+        <label><input type="radio" name="q3" value="d">D. 17</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">Which of the following is not included in the steps of the scientific method?:</span><br>
+        <label><input type="radio" name="q4" value="a">A. Make a hypothesis</label><br>
+        <label><input type="radio" name="q4" value="b">B. Draw conclusions</label><br>
+        <label><input type="radio" name="q4" value="c">C. Test the hypothesis</label><br>
+        <label><input type="radio" name="q4" value="d">D. Test observations</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">Which feature is shown by all insects?</span><br>
+        <label><input type="radio" name="q5" value="a">A. External skeleton</label><br>
+        <label><input type="radio" name="q5" value="b">B. Two pairs of legs</label><br>
+        <label><input type="radio" name="q5" value="c">C. Jumping legs</label><br>
+        <label><input type="radio" name="q5" value="d">D. Stinging mechanism</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">A boy was shown the bones of an animal’s head. He concluded that the animal was an herbivore. What feature of the animal helped him conclude this?</span><br>
+        <label><input type="radio" name="q6" value="a">A. The animal had a big mouth</label><br>
+        <label><input type="radio" name="q6" value="b">B. The animal had flat teeth</label><br>
+        <label><input type="radio" name="q6" value="c">C. The animal had pointy teeth</label><br>
+        <label><input type="radio" name="q6" value="d">D. The animal had a pointy head</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">_____ occurs in females if no fertilization takes place</span><br>
+        <label><input type="radio" name="q7" value="a">A. Menopause</label><br>
+        <label><input type="radio" name="q7" value="b">B. Menstruation</label><br>
+        <label><input type="radio" name="q7" value="c">C. Pregnancy</label><br>
+        <label><input type="radio" name="q7" value="d">D. Puberty</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">Our teeth act as simple machines because they can cut, chew and grind the food we eat. Which simple machine can our teeth be considered?</span><br>
+        <label><input type="radio" name="q8" value="a">A. Wedge</label><br>
+        <label><input type="radio" name="q8" value="b">B. Wheel and axle</label><br>
+        <label><input type="radio" name="q8" value="c">C. Pulley</label><br>
+        <label><input type="radio" name="q8" value="d">D. Lever</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">Which is not part of the digestive system?</span><br>
+        <label><input type="radio" name="q9" value="a">A. Intestines</label><br>
+        <label><input type="radio" name="q9" value="b">B. Stomach</label><br>
+        <label><input type="radio" name="q9" value="c">C. Mouth</label><br>
+        <label><input type="radio" name="q9" value="d">D. Heart</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">How does your brain deliver messages throughout the body?</span><br>
+        <label><input type="radio" name="q10" value="a">A. Muscles</label><br>
+        <label><input type="radio" name="q10" value="b">B. Nerves</label><br>
+        <label><input type="radio" name="q10" value="c">C. Arteries</label><br>
+        <label><input type="radio" name="q10" value="d">D. Veins</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">What is the role of a decomposer in an ecosystem?</span><br>
+        <label><input type="radio" name="q11" value="a">A. To recycle organic waste back into the soil</label><br>
+        <label><input type="radio" name="q11" value="b">B. To add more organic waste</label><br>
+        <label><input type="radio" name="q11" value="c">C. To implement peace with the ecosystem</label><br>
+        <label><input type="radio" name="q11" value="d">D. To prey on the consumers</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">What is acceleration?</span><br>
+        <label><input type="radio" name="q12" value="a">A. The direction of an object</label><br>
+        <label><input type="radio" name="q12" value="b">B. The rate of change in motion</label><br>
+        <label><input type="radio" name="q12" value="c">C. The rate the object slows down</label><br>
+        <label><input type="radio" name="q12" value="d">D. The speed of an object</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question"> What is a force?</span><br>
+        <label><input type="radio" name="q13" value="a">A. Mass</label><br>
+        <label><input type="radio" name="q13" value="b">B. Weight</label><br>
+        <label><input type="radio" name="q13" value="c">C. Tendency for an object to resist a change in motion</label><br>
+        <label><input type="radio" name="q13" value="d">D. A push or pull</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">How does one measure the speed of a object?</span><br>
+        <label><input type="radio" name="q14" value="a">A. Measure the time the object takes to travel a specific distance</label><br>
+        <label><input type="radio" name="q14" value="b">B. Measure the acceleration of the object</label><br>
+        <label><input type="radio" name="q14" value="c">C. Measure the force put into the object</label><br>
+        <label><input type="radio" name="q14" value="d">D. Measure the mass of the object</label><br>
+      </li>
+	  
+	  <li>
+        <span class="question">When heat is transferred through a solid object, it is called:</span><br>
+        <label><input type="radio" name="q15" value="a">A. Convection</label><br>
+        <label><input type="radio" name="q15" value="b">B. Conduction</label><br>
+        <label><input type="radio" name="q15" value="c">C. Radiation</label><br>
+        <label><input type="radio" name="q15" value="d">D. All of the above</label><br>
+      </li>
+    </ol>
+    
+    <h2>Fill in the Blanks or Answer as Directed</h2>
+    <ol>
+      <li>
+        <span class="question">The process of plants making food is called _______.</span><br>
+        <input type="text" name="q16"><br>
+      </li>
+	  
+	  <li>
+        <span class="question">The locomotor system, otherwise known as the ________  system allows the body to move.</span><br>
+        <input type="text" name="q17"><br>
+      </li>
+	  
+	  <li>
+        <span class="question">The death of a larger star (than our solar system’s sun) results in a ________ explosion.</span><br>
+        <input type="text" name="q18"><br>
+      </li>
+	  
+	  <li>
+        <span class="question">The rusting of iron is an example of ________ change.</span><br>
+        <input type="text" name="q19"><br>
+      </li>
+	  
+	  <li>
+        <span class="question">C6H12O6 is the chemical formula of ________.</span><br>
+        <input type="text" name="q20"><br>
+      </li>
+    </ol>
+    
+    <input type="submit" value="Submit" id="submit-btn">
+    <input type="reset" value="Reset" id="reset-btn">
+  </form>
+  
+  <div id="feedback">
+    <!-- The feedback will be dynamically added here -->
+  </div>
+
+  <script>
+  document.getElementById("submit-btn").addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Clear previous feedback
+  document.getElementById("feedback").innerHTML = "";
+
+  // Variables to track score and unanswered questions
+  let score = 0;
+
+  // Check multiple choice questions
+  const mcQuestions = document.querySelectorAll('input[type="radio"]:not([type="text"])');
+  mcQuestions.forEach(function(question) {
+    const questionName = question.getAttribute("name");
+    const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+
+    if (selectedAnswer) {
+      const correctAnswer = selectedAnswer.value === "a"; // Change this based on the correct answer
+
+      if (correctAnswer) {
+        score++;
+        selectedAnswer.parentNode.classList.add("correct");
+
+        // Add the correct answer to the DOM
+        question.parentNode.querySelector(".correct-answer").innerHTML = correctAnswer;
+      } else {
+        selectedAnswer.parentNode.classList.add("incorrect");
+
+        // Show the correct answer below the question
+        const correctAnswerDiv = document.createElement("div");
+        correctAnswerDiv.classList.add("correct-answer");
+        correctAnswerDiv.innerHTML = correctAnswer;
+        question.parentNode.appendChild(correctAnswerDiv);
+      }
+    }
+  });
+
+  // Check fill-in-the-blank or answer as directed questions
+  const fbQuestions = document.querySelectorAll('input[type="text"]');
+  fbQuestions.forEach(function(question) {
+    const userAnswer = question.value.trim().toLowerCase();
+
+    if (userAnswer !== "") {
+      const questionNumber = question.getAttribute("name").replace("q", "");
+      let correctAnswer2;
+
+      switch (questionNumber) {
+        case "16":
+          correctAnswer2 = "photosynthesis";
+          break;
+        case "17":
+          correctAnswer2 = "muscular";
+          break;
+        case "18":
+          correctAnswer2 = "supernova";
+          break;
+        case "19":
+          correctAnswer2 = "chemical";
+          break;
+        case "20":
+          correctAnswer2 = "glucose";
+          break;
+        default:
+          correctAnswer2 = "";
+          break;
+      }
+
+      if (correctAnswer2 !== "" && userAnswer === correctAnswer2) {
+        score++;
+        question.classList.add("correct");
+
+        // Add the correct answer to the DOM
+        question.parentNode.querySelector(".correct-answer").innerHTML = correctAnswer2;
+      } else {
+        question.classList.add("incorrect");
+
+        // Show the correct answer below the question
+        const correctAnswerDiv = document.createElement("div");
+        correctAnswerDiv.classList.add("correct-answer");
+        correctAnswerDiv.innerHTML = correctAnswer2;
+        question.parentNode.appendChild(correctAnswerDiv);
+      }
+    } else {
+      unanswered.push(question.getAttribute("name"));
+    }
+  });
+
+  // Display feedback
+  let feedbackHTML = "<h3>Quiz Results:</h3>";
+  feedbackHTML += "<p>Score: " + score + " out of 20 </p>";
+
+  document.getElementById("feedback").innerHTML = feedbackHTML;
+});
+
+  </script>
+</body>
+</html>
