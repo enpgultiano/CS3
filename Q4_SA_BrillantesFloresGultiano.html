@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>		<title>NCE REVIEWER - Science</title>
+
+		<style>
+
+			body {
+
+				font-family: Arial, sans-serif;
+
+				background-color: #E7CBCB;
+
+				color: #333;
+
+				margin: 0;
+
+				padding: 20px;
+
+			}
+
+			h1 {
+
+				text-align: center;
+
+				background-color: #643843;
+
+				color: white;
+
+				border-radius: 10px;
+
+				padding-top: 10px;
+
+				padding-bottom: 10px;
+
+				margin-top: 3px;
+
+				width: 800px; 
+
+				margin-left: auto;
+
+				margin-right: auto;		  
+
+			}
+
+			
+
+			form {
+
+				margin-bottom: 20px;
+
+				width: 700px;
+
+				margin-left: auto;
+
+				margin-right: auto;
+
+				background-color: #f5f5f5;
+
+				border-radius: 10px;
+
+			}
+
+			
+
+			h3{
+
+				color: purple;
+
+			}
+
+			
+
+			
+
+			.mc-question {
+
+				margin-bottom: 10px;
+
+			}
+
+			p {
+
+				margin: 0;
+
+				font-weight: bold;
+
+			}
+
+			input[type="radio"] {
+
+				margin-right: 5px;
+
+			}
+
+			
+
+			.question{
+
+				padding-left:50px;
+
+				padding-right: 50px;
+
+				padding-top: 10px;
+
+				padding-bottom: 10px;
+
+			}
+
+			.feedback {
+
+				font-weight: bold;
+
+				color: #008000;
+
+			}
+
+			input[type="text"] {
+
+				padding: 5px;
+
+				border: 1px solid #ccc;
+
+				border-radius: 3px;
+
+				width: 150px;
+
+			}
+
+			.correct {
+
+				border-color: #008000;
+
+				background-color: #ccffcc;
+
+			}
+
+			.incorrect {
+
+				border-color: #ff0000;
+
+				background-color: #ffcccc;
+
+			}
+
+			#submitBtn {
+
+				margin-top: 20px;
+
+				background-color: #336699;
+
+				color: #fff;
+
+				padding: 10px 20px;
+
+				border: none;
+
+				border-radius: 5px;
+
+				cursor: pointer;
+
+			}
+
+			#score {
+
+				margin-top: 10px;
+
+				font-weight: bold;
+
+				color: #336699;
+
+			}
+
+			#resetBtn {
+
+				margin-top: 20px;
+
+				background-color: #cccccc;;
+
+				padding: 10px 20px;
+
+				border: none;
+
+				border-radius: 5px;
+
+				cursor: pointer;
+
+			}
+
+			
+
+		</style> 
+
+	</head>
+
+	
+
+	<body>
+
+		<h1>NCE - Science Reviewer</h1>
+
+		<form class="question">
+
+			<h3>Test I. Multiple Choice Questions: Select the right answer to the question given.</h3>
+
+			<div class="mc-question">
+
+			  <p>1. Which of the following is an observation?</p>
+
+			  <input type="radio" name="q1" value="incorrect"> A. The water will evaporate when placed outside<br>
+
+			  <input type="radio" name="q1" value="correct"> B. The children are being loud<br>
+
+			  <input type="radio" name="q1" value="incorrect"> C. Global warming is due to several factors, including pollution<br>
+
+			  <input type="radio" name="q1" value="incorrect"> D. Birds migrate to move from areas of low or decreasing resources to areas of high or increasing resources.Global warming is due to several factors, including pollution<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			<div class="mc-question">
+
+			  <p>2. Which of the following is considered a biotic factor in an ecosystem?</p>
+
+			  <input type="radio" name="q2" value="incorrect"> A. Temperature<br>
+
+			  <input type="radio" name="q2" value="incorrect"> B. Pressure<br>
+
+			  <input type="radio" name="q2" value="incorrect"> C. Soil<br>
+
+			  <input type="radio" name="q2" value="correct"> D. Plant<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>3. The human body has how many significant systems?</p>
+
+			  <input type="radio" name="q3" value="incorrect"> A. 5<br>
+
+			  <input type="radio" name="q3" value="incorrect">B. 6<br>
+
+			  <input type="radio" name="q3" value="correct">C. 11<br>
+
+			  <input type="radio" name="q3" value="incorrect"> D. 17<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>4. Which of the following is not included in the steps of the scientific method?:</p>
+
+			  <input type="radio" name="q4" value="incorrect"> A. Make a hypothesis<br>
+
+			  <input type="radio" name="q4" value="incorrect">B. Draw conclusions<br>
+
+			  <input type="radio" name="q4" value="incorrect">C. Test the hypothesis<br>
+
+			  <input type="radio" name="q4" value="correct">D. Test observations<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>5. Which of the following is an observation?</p>
+
+			  <input type="radio" name="q5" value="correct">A. External skeleton<br>
+
+			  <input type="radio" name="q5" value="incorrect">B. Two pairs of legs<br>
+
+			  <input type="radio" name="q5" value="incorrect">C. Jumping legs<br>
+
+			  <input type="radio" name="q5" value="incorrect">D. Stinging mechanism<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>6.A boy was shown the bones of an animal’s head. He concluded that the animal was an herbivore. What feature of the animal helped him conclude this?</p>
+
+			  <input type="radio" name="q6" value="incorrect"> A. The animal had a big mouth<br>
+
+			  <input type="radio" name="q6" value="correct"> B. The animal had flat teeth<br>
+
+			  <input type="radio" name="q6" value="incorrect"> C. The animal had pointy teeth<br>
+
+			  <input type="radio" name="q6" value="incorrect"> D. The animal had a pointy head<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>7. _____ occurs in females if no fertilization takes place</p>
+
+			  <input type="radio" name="q7" value="incorrect">A. Menopause<br>
+
+			  <input type="radio" name="q7" value="correct"> B. Menstruation<br>
+
+			  <input type="radio" name="q7" value="incorrect"> C. Pregnancy<br>
+
+			  <input type="radio" name="q7" value="incorrect">D. Puberty<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>8. Our teeth act as simple machines because they can cut, chew and grind the food we eat. Which simple machine can our teeth be considered?</p>
+
+			  <input type="radio" name="q8" value="correct"> A. Wedge<br>
+
+			  <input type="radio" name="q8" value="incorrect"> B. Wheel and Axle<br>
+
+			  <input type="radio" name="q8" value="incorrect"> C. Pulley<br>
+
+			  <input type="radio" name="q8" value="incorrect"> D. Lever<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>9. Which is not part of the digestive system?</p>
+
+			  <input type="radio" name="q9" value="incorrect"> A. Intestines<br>
+
+			  <input type="radio" name="q9" value="incorrect"> B. Stomach<br>
+
+			  <input type="radio" name="q9" value="incorrect">C. Mouth<br>
+
+			  <input type="radio" name="q9" value="correct"> D. Heart<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>10. How does your brain deliver messages throughout the body?</p>
+
+			  <input type="radio" name="q10" value="incorrect"> A. Muscles<br>
+
+			  <input type="radio" name="q10" value="correct">B. Nerves<br>
+
+			  <input type="radio" name="q10" value="incorrect">C. Arteries<br>
+
+			  <input type="radio" name="q10" value="incorrect">D. Veins<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>11. What is the role of a decomposer in an ecosystem?</p>
+
+			  <input type="radio" name="q11" value="correct">A. To recycle organic waste back into the soil<br>
+
+			  <input type="radio" name="q11" value="incorrect"> B. To add more organic waste<br>
+
+			  <input type="radio" name="q11" value="incorrect"> C. To implement peace with the ecosystem<br>
+
+			  <input type="radio" name="q11" value="incorrect"> D. To prey on the consumers<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>12. What is acceleration?</p>
+
+			  <input type="radio" name="q12" value="incorrect"> A. The direction of an object<br>
+
+			  <input type="radio" name="q12" value="correct"> B. The rate of change in motion<br>
+
+			  <input type="radio" name="q12" value="incorrect"> C. The rate the object slows down<br>
+
+			  <input type="radio" name="q12" value="incorrect">D. The speed of an object<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>13. What is a force?</p>
+
+			  <input type="radio" name="q13" value="incorrect"> A. Mass<br>
+
+			  <input type="radio" name="q13" value="incorrect"> B. Weight<br>
+
+			  <input type="radio" name="q13" value="incorrect"> C. Tendency for an object to resist a change in motion<br>
+
+			  <input type="radio" name="q13" value="correct"> D. A push or pull<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>14. How does one measure the speed of a object?</p>
+
+			  <input type="radio" name="q14" value="correct"> A. Measure the time the object takes to travel a specific distance<br>
+
+			  <input type="radio" name="q14" value="incorrect">B. Measure the acceleration of the object<br>
+
+			  <input type="radio" name="q14" value="incorrect">C. Measure the force put into the object<br>
+
+			  <input type="radio" name="q14" value="incorrect"> D. Measure the mass of the object<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="mc-question">
+
+			  <p>15. When heat is transferred through a solid object, it is called:</p>
+
+			  <input type="radio" name="q15" value="incorrect"> A. Convection<br>
+
+			  <input type="radio" name="q15" value="correct"> B. Conduction<br>
+
+			  <input type="radio" name="q15" value="incorrect"> C. Radiation<br>
+
+			  <input type="radio" name="q15" value="incorrect"> D. All of the above<br>
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<h3>Test II. Fill in the Blank and answer as directed. </h3>
+
+			<div class="fbquestion">
+
+			  <p>1. The process of plants making food is called _______.</p>
+
+			  <input type="text" name="q16">
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			<div class="fbquestion">
+
+			  <p>2. The locomotor system, otherwise known as the ________  system allows the body to move.</p>
+
+			  <input type="text" name="q17">
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="fbquestion">
+
+			  <p>3. The death of a larger star (than our solar systems sun) results in a ________ explosion.</p>
+
+			  <input type="text" name="q18">
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="fbquestion">
+
+			  <p>4. The rusting of iron is an example of ________ change.</p>
+
+			  <input type="text" name="q19">
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<div class="fbquestion">
+
+			  <p>5. C6H12O6 is the chemical formula of ________.</p>
+
+			  <input type="text" name="q20">
+
+			  <span class="feedback"></span>
+
+			</div>
+
+			
+
+			<button id="submitBtn" onclick="checkAnswers()">Submit</button>
+
+			<button id="resetBtn" onclick="resetQuiz()">Reset</button>
+
+			<p id="score">Total Score: 0</p>
+
+	  </form>
+
+	<script>
+
+		function checkAnswers() {
+
+		var score = 0;
+
+		var unanswered = [];
+
+		// Check multiple-choice questions
+
+		var mcQuestions = document.getElementsByClassName('mc-question');
+
+		for (var i = 0; i < mcQuestions.length; i++) {
+
+			var selectedOption = mcQuestions[i].querySelector('input[type=radio]:checked');
+
+			if (selectedOption) {
+
+			  var answer = selectedOption.value;
+
+			  if (answer === 'correct') {
+
+				mcQuestions[i].querySelector('.feedback').textContent = 'Correct!';
+
+				score++;
+
+			  } else {
+
+				mcQuestions[i].querySelector('.feedback').textContent = 'Incorrect.';
+
+			  }
+
+			} 
+
+			
+
+			else {
+
+			  mcQuestions[i].querySelector('.feedback').textContent = 'Please select an answer.';
+
+			}
+
+		}
+
+		// Check fill-in-the-blank questions
+
+		const fbQuestions = document.querySelectorAll('input[type="text"]');
+
+		fbQuestions.forEach(function(fbquestion) {
+
+		const userAnswer = fbquestion.value.trim().toLowerCase();
+
+		if (userAnswer !== "") {
+
+			const questionNumber = fbquestion.getAttribute("name").replace("q", "");
+
+			let correctAnswer2;
+
+			switch (questionNumber) {
+
+				case "16":
+
+				  correctAnswer2 = "photosynthesis";
+
+				  break;
+
+				case "17":
+
+				  correctAnswer2 = "muscular";
+
+				  break;
+
+				case "18":
+
+				  correctAnswer2 = "supernova";
+
+				  break;
+
+				case "19":
+
+				  correctAnswer2 = "chemical";
+
+				  break;
+
+				case "20":
+
+				  correctAnswer2 = "glucose";
+
+				  break;
+
+				default:
+
+				  correctAnswer2 = "";
+
+				  break;
+
+			}
+
+			if (correctAnswer2 !== "" && userAnswer === correctAnswer2) {
+
+				score++;
+
+				fbquestion.parentNode.querySelector('.feedback').textContent = 'Correct!';
+
+			} else {
+
+				fbquestion.parentNode.querySelector('.feedback').textContent = 'Incorrect!';
+
+			  }
+
+			} else {
+
+			  fbquestion.parentNode.querySelector('.feedback').textContent = 'Please provide an answer.';
+
+			}
+
+		  });
+
+		// Display total score
+
+		var totalQuestions = mcQuestions.length + fbQuestions.length;
+
+		var unansweredQuestions = unanswered.length;
+
+		var answeredQuestions = totalQuestions - unansweredQuestions;
+
+		var scorePercentage = (score / answeredQuestions) * 100;
+
+		var scoreMessage = 'Total Score: ' + score + ' / ' + answeredQuestions + ' (' + scorePercentage.toFixed(2) + '%)';
+
+		if (unansweredQuestions > 0) {
+
+			scoreMessage += ' - ' + unansweredQuestions + ' unanswered';
+
+		}
+
+		
+
+		  document.getElementById('score').textContent = scoreMessage;
+
+		}
+
+		function resetQuiz() {
+
+		// Reset multiple-choice questions
+
+		var mcQuestions = document.getElementsByClassName('mc-question');
+
+		for (var i = 0; i < mcQuestions.length; i++) {
+
+			var feedback = mcQuestions[i].querySelector('.feedback');
+
+			feedback.textContent = '';
+
+			var options = mcQuestions[i].querySelectorAll('input[type=radio]');
+
+			options.forEach(function(option) {
+
+			  option.checked = false; // Uncheck each radio button
+
+			});
+
+		}
+
+		// Reset fill-in-the-blank questions
+
+		var fbQuestions = document.getElementsByClassName('fbquestion');
+
+		for (var i = 0; i < fbQuestions.length; i++) {
+
+			var feedback = fbQuestions[i].querySelector('.feedback');
+
+			var input = fbQuestions[i].querySelector('input[type="text"]');
+
+			feedback.textContent = '';
+
+			input.value = '';
+
+			input.classList.remove('correct');
+
+			input.classList.remove('incorrect');
+
+		}
+
+		// Reset score
+
+		var scoreElement = document.getElementById('score');
+
+		scoreElement.textContent = 'Total Score: 0';
+
+		}
+
+	</script>
+
+	</body>
+
+</html>
